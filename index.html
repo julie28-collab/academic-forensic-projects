@@ -1,40 +1,200 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julie - Academic Forensic Projects</title>
+    <title>Portfolio Cybersecurity - Julie</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background: #f4f6f9;
-            margin: 0;
-            padding: 40px;
-            color: #333;
+            background: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 1000px;
+            width: 90%;
+            max-width: 1100px;
             margin: auto;
         }
 
-        h1 {
-            color: #1f3c88;
-            font-size: 42px;
+        header {
+            text-align: center;
+            padding: 70px 20px;
         }
 
-        .subtitle {
-            margin-bottom: 40px;
-            color: #666;
+        header h1 {
+            font-size: 48px;
+            color: #58a6ff;
         }
 
-        .project {
-            background: white;
+        header p {
+            font-size: 18px;
+            color: #8b949e;
+            margin-top: 10px;
+        }
+
+        .section-title {
+            font-size: 26px;
+            margin: 40px 0 20px;
+            color: #58a6ff;
+        }
+
+        .about {
+            background: #161b22;
             padding: 25px;
-            margin-bottom: 25px;
             border-radius: 14px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 14px;
+            border: 1px solid #30363d;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .skills {
+            margin-top: 12px;
+            font-size: 13px;
+            color: #8b949e;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 14px;
+            background: #238636;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .button:hover {
+            background: #2ea043;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Julie</h1>
+            <p>Cybersécurité • Forensic • Analyse réseau • Investigation numérique</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- ABOUT -->
+        <section class="about">
+            <h2 class="section-title">À propos</h2>
+            <p>
+                Étudiante passionnée par la cybersécurité et l’investigation numérique.
+                Ce portfolio présente des projets académiques réalisés dans le cadre d’analyses forensic,
+                d’investigations de données et de sécurité informatique.
+            </p>
+        </section>
+
+        <!-- PROJECTS -->
+        <h2 class="section-title">Projets</h2>
+
+        <section class="projects">
+
+            <!-- PROJET 1 -->
+            <div class="card">
+                <h3>Récupération de fichier supprimé</h3>
+
+                <p>
+                    Analyse forensic d’un fichier JPG supprimé depuis une image de carte SD Android.
+                    Classification selon la taxonomie de Casey et al. (2019).
+                </p>
+
+                <p class="skills">
+                    FTK Imager • Autopsy • ExifTool • HxD • X-Ways Forensics
+                </p>
+
+                <a href="#" class="button">Voir le projet</a>
+            </div>
+
+            <!-- PROJET 2 -->
+            <div class="card">
+                <h3>Analyse de trafic réseau</h3>
+
+                <p>
+                    Analyse de captures réseau pour détecter des comportements suspects
+                    et reconstruire une potentielle attaque.
+                </p>
+
+                <p class="skills">
+                    Wireshark • TCP/IP • PCAP Analysis
+                </p>
+
+                <a href="#" class="button">Voir le projet</a>
+            </div>
+
+            <!-- PROJET 3 -->
+            <div class="card">
+                <h3>Analyse de malware</h3>
+
+                <p>
+                    Étude statique et dynamique de fichiers suspects pour identifier des indicateurs de compromission (IOC).
+                </p>
+
+                <p class="skills">
+                    YARA • Sandbox • Hash Analysis
+                </p>
+
+                <a href="#" class="button">Voir le projet</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2025 - Portfolio Cybersécurité
+    </footer>
+
+</body>
+
+</html>            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         }
 
         .project h2 {
