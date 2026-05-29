@@ -1,88 +1,149 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Ton Nom</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julie - Academic Forensic Projects</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f5f7fa;
-      color: #333;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
 
-    h1 {
-      color: #1f4e79;
-    }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
 
-    .project {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+        h1 {
+            color: #1f3c88;
+            font-size: 42px;
+        }
 
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
+        .subtitle {
+            margin-bottom: 40px;
+            color: #666;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        .project {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
 
-    .skills {
-      color: #666;
-      font-size: 14px;
-    }
-  </style>
+        .project h2 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .skills {
+            color: #777;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #777;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
-  <h1>Ton Nom</h1>
-  <p>
-    Étudiant en [ton domaine] — Portfolio de projets académiques
-  </p>
+<div class="container">
 
-  <div class="project">
-    <h2>Projet 1 — Analyse de données</h2>
+    <h1>Julie — Academic Forensic Projects</h1>
+
+    <p class="subtitle">
+        Portfolio académique présentant mes projets durant mon Master en Investigation et Identification numérique.
+    </p>
+
+
+    <div class="card">
+    <h3>Deleted File Recovery & Classification</h3>
 
     <p>
-      Développement d’un outil d’analyse statistique pour étudier...
-    </p>
-
-    <p class="skills">
-      Python • Pandas • Matplotlib
-    </p>
-
-    <p>
-      <a href="https://github.com/TONCOMPTE/projet1">
-        Voir le projet GitHub
-      </a>
-    </p>
-  </div>
-
-  <div class="project">
-    <h2>Projet 2 — Application Web</h2>
-
-    <p>
-      Création d’une application permettant de...
-    </p>
-
-    <p class="skills">
-      HTML • CSS • JavaScript
+        Analyse forensic d’un fichier JPG supprimé puis récupéré depuis une image de carte SD Android.
+        L’objectif du projet était d’identifier, comparer et classifier les artefacts numériques selon
+        la taxonomie proposée par Casey et al. (2019).
     </p>
 
     <p>
-      <a href="https://github.com/TONCOMPTE/projet2">
-        Voir le projet GitHub
-      </a>
+        L’investigation a inclus l’extraction de données, l’analyse des métadonnées,
+        l’étude hexadécimale du fichier ainsi que la comparaison avec des fichiers carvés
+        afin d’évaluer différentes hypothèses de classification.
     </p>
-  </div>
+
+    <div class="skills">
+        FTK Imager • Autopsy • ExifTool • HxD • X-WAYS Forensics • File Carving
+    </div>
+
+    <a href="#" class="button">
+        View Project
+    </a>
+</div>
+      
+    <div class="project">
+        <h2>Projet 1 — Analyse Forensic Windows</h2>
+
+        <p>
+            Investigation d’un système Windows compromis afin d’identifier les traces d’intrusion,
+            les artefacts numériques et les activités malveillantes.
+        </p>
+
+        <div class="skills">
+            FTK Imager • Autopsy • Windows Event Logs
+        </div>
+
+        <p>
+            <a href="#">
+                Voir le projet
+            </a>
+        </p>
+    </div>
+
+    <div class="project">
+        <h2>Projet 2 — Analyse Réseau</h2>
+
+        <p>
+            Étude de captures réseau afin de détecter des comportements suspects
+            et reconstruire une chronologie d’attaque.
+        </p>
+
+        <div class="skills">
+            Wireshark • TCP/IP • Network Forensics
+        </div>
+
+        <p>
+            <a href="#">
+                Voir le projet
+            </a>
+        </p>
+    </div>
+
+    <footer>
+        © 2025 Julie — Academic Portfolio
+    </footer>
+
+</div>
 
 </body>
 </html>
